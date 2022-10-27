@@ -280,7 +280,7 @@ body{
         top: 0;
     }
     .recipe ul li{
-        width: 35%;
+        width: 100%;
         text-align: start;
     } 
     .recipe ol li{

@@ -1,19 +1,20 @@
 // NAVBAR START
 const navBar = document.querySelector(".navbar");
-let prevScrollHeight = window.pageYOffset;
+let prevScrollHeight;
 let currentScrollHeight;
 window.addEventListener("scroll", function () {
-    currentScrollHeight = window.pageYOffset;
-    if (prevScrollHeight > currentScrollHeight) {
-        navBar.style.transform = "translate(0,0)";
-        prevScrollHeight = window.pageYOffset;
-    } else {
+    if (window.pageYOffset > 64) {
         currentScrollHeight = window.pageYOffset;
-        navBar.style.transform = "translate(0, -64px)";
+        if (prevScrollHeight > currentScrollHeight) {
+            navBar.style.transform = "translate(0,0)";
+            prevScrollHeight = window.pageYOffset;
+        } else {
+            currentScrollHeight = window.pageYOffset;
+            navBar.style.transform = "translate(0, -64px)";
+        }
+        prevScrollHeight = currentScrollHeight;
     }
-    prevScrollHeight = currentScrollHeight;
 });
-
 //NAVBAR END
 
 // SIDEBAR START
@@ -64,24 +65,28 @@ const slider = [
         ingredients:
             "<li>50ml white rum</li><li>25ml lime juice</li><li>10ml sugar syrup</li><li>ice</li>",
         recipeText:
-            "<li>Shake all the ingredients in a cocktail shaker and strain into a cocktail glass.</li>",
+            "<li>Shake all the ingredients in a cocktail shaker and strain into a cocktail glass.</li><li>garnish with a lime wedge</li>",
     },
     {
         title: "MOJITO",
         img: "/Img/mojito.jpg",
-        ingredients: "<li></li><li></li><li></li>",
-        recipeText: "<li></li><li></li><li></li>",
+        ingredients:
+            "<li>6 cl of Cuban white rum</li><li>3 cl of lime juice</li><li>10 leaves of Hierba Buena </li><li>2 tablespoons of refined white sugar</li><li>Ice</li><li>a splash of soda</li>",
+        recipeText:
+            "<li>Pour lime juice and simple syrup into a glass.</li><li>Put 10-12 mint leaves in the glass.</li><li>Gently muddle the mint leaves.</li><li>Add gin and fill the glass a little more than halfway with crushed ice.</li><li>Stir with a spoon to mix the ingredients.</li><li>Add tonic and then fill the entire glass with crushed ice.</li><li>Serve with a straw and garnish with cucumber and a sprig of mint.</li>",
     },
     {
         title: "DRY MARTINI",
         img: "/Img/dry_martini.jpg",
-        ingredients: "<li></li><li></li><li></li>",
+        ingredients:
+            "<li>60ml vodka or gin</li><li>1 tbsp dry vermouth</li><li>olive or lemon peel, to garnish</li>",
         recipeText: "<li></li><li></li><li></li>",
     },
     {
         title: "ESPRESSO MARTINI",
         img: "/Img/espresso_martini.jpg",
-        ingredients: "<li></li><li></li><li></li>",
+        ingredients:
+            "<li>4 cl of white rum</li><li>3 cl of lime juice</li><li>10 leaves of Hierba Buena </li><li>2 teaspoon of sugar </li><li>Ice</li><li>	a splash of soda</li>",
         recipeText: "<li></li><li></li><li></li>",
     },
     {
