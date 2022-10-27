@@ -79,33 +79,35 @@ const slider = [
         title: "DRY MARTINI",
         img: "/Img/dry_martini.jpg",
         ingredients:
-            "<li>60ml vodka or gin</li><li>1 tbsp dry vermouth</li><li>olive or lemon peel, to garnish</li>",
-        recipeText: "<li></li><li></li><li></li>",
+            "<li>5 cl Gin</li><li>1 cl vermouth dry</li><li>ice cubes</li><li>Olives</li>",
+        recipeText:
+            "<li>Fill the stirring glass with ice.</li><li>Combine the Dry Gin and vermouth in a stirring glass, or other mixing vessel.</li><li>Stir the mixture for ten seconds to chill and dilute the mixture.</li><li>Strain the drink into the glass.</li><li>Place the olives on the cocktail stick in the cocktail, and serve.</li>",
     },
     {
         title: "ESPRESSO MARTINI",
         img: "/Img/espresso_martini.jpg",
         ingredients:
-            "<li>4 cl of white rum</li><li>3 cl of lime juice</li><li>10 leaves of Hierba Buena </li><li>2 teaspoon of sugar </li><li>Ice</li><li>	a splash of soda</li>",
-        recipeText: "<li></li><li></li><li></li>",
+            "<li>40 ml Vodka</li><li>20 ml Kahlúa</li><li>20 ml Espresso</li><li>3 Whole Coffee Beans</li>",
+        recipeText:
+            "<li>Fill a shaker with ice cubes.</li><li>Add all ingredients. Shake and strain into a cocktail glass.</li><li>Garnish with coffee beans.</li>",
     },
     {
         title: "MARGARITA",
         img: "/Img/margarita.jpg",
-        ingredients: "<li></li><li></li><li></li>",
-        recipeText: "<li></li><li></li><li></li>",
+        ingredients: "<li>40 ml Tequila Blanco</li><li>20 ml Lime Juice</li><li>20 ml Triple Sec</li><li>1 Part Salt</li><li>Ice</li>",
+        recipeText: "<li>Fill a shaker with ice cubes.</li><li>Add all ingredients. Shake and strain into a cocktail glass.</li><li>Garnish the glass with a salt rim.</li>",
     },
     {
         title: "APEROL SPRITZ",
         img: "/Img/aperol_spritz.jpg",
-        ingredients: "<li></li><li></li><li></li>",
-        recipeText: "<li></li><li></li><li></li>",
+        ingredients: "<li>50ml Aperol</li><li>75ml prosecco</li><li>soda, to top up</li><li>Ice</li>",
+        recipeText: "<li>Put a couple of icecubes into the glass.</li><li>Add the Aperol</li><li>Add the prosecco</li><li>Top with some soda</li>",
     },
     {
         title: "GIN & TONIC",
         img: "/Img/gin-and-tonic.jpg",
-        ingredients: "<li></li><li></li><li></li>",
-        recipeText: "<li></li><li></li><li></li>",
+        ingredients: "<li>2 cl gin</li><li>5cl tonic water</li><li>Lime wedge or slices</li>",
+        recipeText: "<li>Fill a glass with ice cubes</li><li>Pour the gin, then top with tonic.</li><li>Gently stir to combine, but not so much so that you lose carbonation.</li><li>Garnish with a lime wedge or lime slices. Serve and enjoy.</li>",
     },
 ];
 const sliderContent = document.querySelector(".slider-container");
