@@ -1,0 +1,309 @@
+:root{
+    /* COLORS */
+    --light-black: #161616;
+    --dark-gray: #515151;
+    --white-bg: #ffffff;
+    /* FONTS */
+    --font-title: 'Playfair Display', serif;
+    --font-text: 'Roboto', sans-serif;
+    --font-logo: 'Monoton', cursive, serif;
+}
+*{ 
+    scroll-margin-top: 25px;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-size: 10px;
+    background-color: var(--dark-gray);
+    background-color: transparent;
+}
+.desktop {
+    display: none;
+}
+body{
+    background-color: var(--dark-gray);
+}
+/* NAVBAR START */
+.navbar{
+    width: 100%;
+    position: fixed;    
+    border-bottom: solid 1px #ffffff;
+    transition: transform 300ms ease-in;
+    z-index: 999;
+}
+/* navbar BG color */
+.nav-links{
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 20px;
+    background: transparent;
+}
+.link{
+    list-style: none;
+}
+#text {
+    font-family: var(--font-text);
+    font-size: 2rem;
+}
+.link a{
+    text-decoration: none;
+    color: white;
+}
+.nav-links button {
+    border: none;
+}
+.fa-search, .fa-bars{
+    font-size: 3rem;
+    color: #ffffff;
+}
+.fa-search, .fa-bars:hover {
+    cursor: pointer;
+}
+.logo {
+    font-family: var(--font-logo);
+    color: var(--white-bg);
+    font-size: 3rem;
+}
+/* NAVBAR END */
+/* SIDEBAR START */
+.sidebar{
+    position: fixed;
+}
+.hide-sidebar *{
+    transform: translate(-100px, 0px);
+    transition: transform 300ms ease-in;
+}
+.show-sidebar{
+    position: fixed;
+    top: 64px;
+    z-index: 999;
+    transition: transform 300ms ease-in;
+    transform: translate(0, 0px);
+}
+.sidebar-link{
+    padding: 5px;
+    list-style: none; 
+}
+.sidebar-link a {
+    padding: 4px;
+    color: #ffffff;
+    text-decoration: none;
+    list-style: none;
+    border-bottom: 1px white solid;
+}
+.sidebar-link a:hover {
+    border-collapse: separate solid;
+}
+/* SIDEBAR END */
+
+.slider-container{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+.slider-img {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    object-fit: cover;
+}
+.drink-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-size: 5rem;
+    font-family: var(--font-title);
+}
+.slider-btn{
+    position: absolute;
+    padding: 1rem 4rem;
+    top: 70%;
+    left: 50%;
+    font-size: 2rem;
+    transform: translate(-50%, -50%);
+    border: white solid 1px;
+    color: white;
+    font-family: var(--font-text);
+    text-decoration: none;
+}
+.slider-btn:hover{
+    cursor: pointer;
+    border-radius: 20px;
+}
+#slider-arrow-left{
+    position: absolute;
+    top: 82%;
+    left: 15%;
+    border: none;
+    font-size: 4rem;
+    opacity: 0.5;
+    
+}
+#slider-arrow-right{
+    position: absolute;
+    top: 82%;
+    right: 15%;
+    border: none;
+    font-size: 4rem;
+    opacity: 0.5;
+}
+#slider-arrow-left:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+#slider-arrow-right:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.arrow-btn{
+    font-size: 5rem;
+    color: #ffffff;
+    border: none;
+}
+.img-overlay{  
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-color: #161616;
+    box-shadow: #161616 15px 15px 15px 15px;
+}
+/* RECIPE START */
+.recipe-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.recipe-img{
+    /* TRANSISION START */
+    /* TRANSISION END */
+    width: 80%;
+    height: 300px;
+    position: absolute;
+    top: 50px;
+    z-index: 100;
+    object-fit: cover;
+    box-shadow: 0px 3px 5px 1px;
+}
+.recipe-underlay{
+    /* TRANSISION START */
+    /* TRANSISION END */
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 100px;
+    margin-bottom: 100px;
+    min-height: auto;
+    background-color: var(--light-black);
+    box-shadow: 1px 3px 5px 1px;
+}
+.recipe-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    margin: 265px auto 20px auto;
+    top: 100px;
+    color: white;
+}
+.recipe-text h3{
+    font-family: var(--font-title);
+    font-size: 2.7rem;
+}
+.recipe{
+    text-align: center; 
+}
+.recipe ul li{  
+    font-family: var(--font-text);
+    color: var(--dark-gray);
+    font-size: 1.5rem;
+    list-style: none;
+    padding: 5px 0;
+}
+.recipe ol li{
+    text-align: start;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    font-family: var(--font-text);
+    list-style: none;
+    border-bottom: dashed var(--dark-gray) 1px;
+    padding: 10px 0;
+}
+.recipe ol li:first-child{
+    padding-top: 0;
+}
+/* RECIPE END */
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) {
+    #slider-arrow-left{
+        top: 60%;
+        left: 10%;
+        transform: translate(10%, -60%);
+    }
+    #slider-arrow-right{
+        top: 60%;
+        right: 10%;
+        transform: translate(10%, -60%);
+    }
+}
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    .desktop {
+        display: block;
+    }
+    .mobile {
+        display: none;
+    }
+    .logo {
+        position: relative;
+        left: -42px;
+    }
+    /* RECIPE START */
+    .recipe-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 20px;
+        width: 100%;
+        height: auto;
+        min-height: 45vh;
+        top: 0;
+    }
+    .recipe ul li{
+        width: 35%;
+        text-align: start;
+    } 
+    .recipe ol li{
+        width: 40%;
+    }
+    .recipe-img{
+        width: 46%;
+        min-height: 45vh;
+        right: 5%;
+    }
+    .recipe-underlay{
+        width: 76%;
+        min-height: 350px;
+    }
+    /* RECIPE End */
+}
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+    .nav-links {
+        margin: auto;
+        max-width: 1200px;
+    }
+}   
