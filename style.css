@@ -321,7 +321,7 @@ body{
     }
     .recipe-section {
         display: grid;
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: repeat(2, 2fr);
         grid-template-rows: repeat(5, auto);
         grid-column-gap: 0px;
         grid-row-gap: 0px;    
