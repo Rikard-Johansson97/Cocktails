@@ -161,7 +161,7 @@ window.addEventListener("DOMContentLoaded", function () {
 const recipeContainer = document.querySelector(".recipe-section");
 function displayRecipe() {
     for (let i = 0; i <= slider.length - 1; i++) {
-        recipeContainer.innerHTML += `            <!-- RECIPE START -->
+        recipeContainer.innerHTML += `<!-- RECIPE START -->
         <div class="recipe-container" id="${slider[i].title}">
             <img  class="recipe-img .from-right" src="${slider[i].img}" alt="${slider[i].title}" />
             <div class="recipe-underlay .from-left">
@@ -183,5 +183,8 @@ function displayRecipe() {
 }
 
 // RECIPE TRANSISTION
-
+id = document.getElementById(slider[1].title);
+window.addEventListener("scroll", function(){
+    console.log(recipeContainer.offsetHeight);
+});
 // RECIPE END
