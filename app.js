@@ -49,7 +49,7 @@ const slider = [
         ingredients:
             "<li>6 cl Whiskey</li><li>1 cl syrup</li><li>4 dashes Angostura Bitters</li>",
         recipeText:
-            "<li>Pour sugar syrup into a glass , shaker or suitable container to stir the drink in. The sugar syrup in this drink is preferably made with raw cane sugar and with two parts sugar and one part water.</li><li>Then add a few splashes of bitters and finally whiskey. Since an Old Fashioned consists mostly of whiskey, it is important to choose a type of whiskey and a brand that you like. Some prefer bourbon while some prefer to use rye whiskey.</li><li>Fill the container with ice and stir the drink with a bar spoon until it is really cold. This step is both for cooling the drink, but also for adding water.</li><li>Strain the drink into an ice-filled glass (suggested with a large ice cube).</li><li>Then garnish with a piece of orange peel that you first squeeze to spray the citrus oils over the drink.</li>",
+            "<li>Pour sugar syrup into a glass , shaker or suitable container to stir the drink in.</li><li>Then add a few splashes of bitters and finally whiskey.</li><li>Fill the container with ice and stir the drink with a bar spoon until it is really cold.</li><li>Strain the drink into an ice-filled glass.</li><li>Then garnish with a piece of orange peel.</li>",
     },
     {
         title: "WHISKEY SOUR",

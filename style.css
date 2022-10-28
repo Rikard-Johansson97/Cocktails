@@ -1,7 +1,7 @@
 :root{
     /* COLORS */
     --light-black: #161616;
-    --dark-gray: #515151;
+    --dark-gray: #201C19;
     --white-bg: #ffffff;
     /* FONTS */
     --font-title: 'Playfair Display', serif;
@@ -13,7 +13,7 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    font-size: 10px;
+    font-size: 12px;
     background-color: var(--dark-gray);
     background-color: transparent;
 }
@@ -77,32 +77,31 @@ body{
 /* NAVBAR END */
 /* SIDEBAR START */
 .sidebar{
-    position: fixed;
+    width: 100%;
+
 }
-.hide-sidebar *{
-    transform: translate(-100px, 0px);
-    transition: transform 300ms ease-in;
+.hide-sidebar{
+    display: none;
+}
+.sidebar-list{
+    display: grid;
+    justify-items:center;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .show-sidebar{
-    position: fixed;
-    top: 64px;
+    border-top: white 1px solid;
     z-index: 999;
-    transition: transform 300ms ease-in;
-    transform: translate(0, 0px);
+    padding: 20px;
 }
 .sidebar-link{
-    padding: 5px;
     list-style: none; 
+    width: 100px;
 }
 .sidebar-link a {
-    padding: 4px;
+    width: 100%;
     color: #ffffff;
     text-decoration: none;
     list-style: none;
-    border-bottom: 1px white solid;
-}
-.sidebar-link a:hover {
-    border-collapse: separate solid;
 }
 /* SIDEBAR END */
 
@@ -110,6 +109,7 @@ body{
     position: relative;
     width: 100%;
     height: 80vh;
+    border-bottom: #161616 solid;
 }
 .slider-img {
     width: 100%;
@@ -187,6 +187,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 }
 .recipe-img{
     /* TRANSISION START */
@@ -231,10 +232,10 @@ body{
 }
 .recipe ul li{  
     font-family: var(--font-text);
-    color: var(--dark-gray);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     list-style: none;
     padding: 4px 0;
+    color: gray;
 }
 .recipe ul{
     margin-top: 15px;
@@ -245,7 +246,7 @@ body{
     line-height: 1.7rem;
     font-family: var(--font-text);
     list-style: none;
-    border-top: dashed var(--dark-gray) 1px;
+    border-top: dashed gray 1px;
     padding: 10px 0;
 }
 .recipe ol li:first-child{
@@ -293,7 +294,7 @@ body{
         margin-left: 15px;
         width: 100%;
         text-align: start;
-        list-style:disc
+        list-style:disc;
     } 
     .recipe ol li{
         width: 100%;
@@ -318,4 +319,12 @@ body{
         margin: auto;
         max-width: 1200px;
     }
+    .recipe-section {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(5, auto);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;    
+        }
+
 }   
